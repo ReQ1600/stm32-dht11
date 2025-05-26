@@ -1,5 +1,5 @@
-# STM32 DHT11 HAL Library
-Library for reading data from DHT11 humidity and temperature sensor.\
+# STM32 DHT11 HAL MODULE
+Module for reading data from DHT11 humidity and temperature sensor.\
 Tested on Nucleo-F767ZI
 
 ## Requirements
