@@ -21,6 +21,6 @@ struct DHT11 dht = {
 };
 ```
 After that you can read data from the sensor with:
-```
+```c
 DHT11_ReadData(&dht);
 ```
