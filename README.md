@@ -10,7 +10,7 @@ Tested on Nucleo-F767ZI
 ## Usage
 First create 2 uint16 variables for temperature and humidity, then create a DHT11 structure and provide it with appropriate arguments:
 
-```
+```c
 uint16_t temperature, humidity;
 struct DHT11 dht = {
   GPIOA,
