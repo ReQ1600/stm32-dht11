@@ -11,9 +11,6 @@
 //change lib below if needed
 #include "stm32f7xx_hal.h"
 
-#define DHT11_GPIO_PORT GPIOA
-#define DHT11_GPIO_PIN GPIO_PIN_0
-
 struct DHT11
 {
 	GPIO_TypeDef* gpio_port;
