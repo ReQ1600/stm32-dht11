@@ -24,3 +24,16 @@ After that you can read data from the sensor with:
 ```c
 DHT11_ReadData(&dht);
 ```
+Or if used in multiple tasks use with mutex:
+```c
+osMutexId dhtMutexHandle;
+
+osMutexDef(dhtMutex);
+dhtMutexHandle = osMutexCreate(osMutex(dhtMutex));
+
+if (osMutexWait(dhtMutexHandle, osWaitForever))
+  {
+    DHT11_ReadData(&dht);
+    osMutexRelease(dhtMutexHandle);
+  }
+```
