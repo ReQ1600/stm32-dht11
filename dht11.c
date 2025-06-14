@@ -14,7 +14,7 @@ void DHT11_ReadData(struct DHT11* dht)
 
 	HAL_GPIO_Init(dht->gpio_port, &GPIO_InitStruct);
 	HAL_GPIO_WritePin(dht->gpio_port, dht->gpio_pin, GPIO_PIN_RESET);
-	TaskDelay(pdMS_TO_TICKS(18));
+	vTaskDelay(pdMS_TO_TICKS(18));
 
 	HAL_GPIO_WritePin(dht->gpio_port, dht->gpio_pin, GPIO_PIN_SET);
 
